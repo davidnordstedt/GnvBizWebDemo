@@ -10,15 +10,15 @@ var app;
     function routeConfig($routeProvider) {
         $routeProvider
             .when("/productList", {
-            templateUrl: "/app/products/productListView.html",
+            templateUrl: "./app/products/productListView.html",
             controller: "ProductListCtrl as vm"
         })
             .when("/productDetail/:productId", {
-            templateUrl: "/app/products/productDetailView.html",
+            templateUrl: "./app/products/productDetailView.html",
             controller: "ProductDetailCtrl as vm"
         })
             .when("/gainesvilleServices", {
-            templateUrl: "/app/products/gainesvilleServiceListView.html",
+            templateUrl: "./app/products/gainesvilleServiceListView.html",
             controller: "GainesvilleServiceListCtrl as vm"
         })
             .otherwise("/gainesvilleServices");
