@@ -1,0 +1,128 @@
+<div class="panel panel-primary"
+    <div class="panel-heading"
+         style="font-size:large">{{::vm.title}}
+    </div>
+
+
+
+    <!--<div ng-controller="GainesvilleServiceListCtrl" class="sidebar" sidebar-directive="state">-->
+    <div ng-controller="GainesvilleServiceListCtrl" >
+            <div ng-repeat="category in vm.categories">
+                <!--<li class="navigation-items"> <a ng-click="vm.selectCategory(category)">{{category}}</a> </li>-->
+                 <button type="button"
+                            class="btn btn-primary"
+                            ng-click="vm.selectCategory(category)">
+                        {{category}}
+                    </button>
+            </div>
+    </div>
+
+    <div class="panel-body">
+        <table class="table">
+
+            <thead>
+            <tr>
+                <!--<td>
+                    <button type="button"
+                            class="btn btn-primary"
+                            ng-click="vm.toggleImage()">
+                        {{vm.showImage ? "Hide" : "Show"}} Image
+                    </button>
+                </td>-->
+                <td>business_category</td>
+                <td>business_type</td>
+                <td>building_commercial</td>
+                <td>development_plan_review</td>
+                <td>special_event</td>
+                <td>sign</td>
+                <td>wastewater_grease_sand_oil_and_lint_interceptor</td>
+                <td>occupational_license_taxes</td>
+                <td>fire_alarm_permit</td>
+                <td>site_plan</td>
+                <td>tree_removal_commercial</td>
+                <td>fire_alarm_system</td>
+                <td>water_ww_construction</td>
+                <td>water_ww_construction</td>
+                <td>change_of_use</td>
+                <td>promotional_event</td>
+                <td>business_occupational_license</td>
+                <td>zoning_verification_and_compliance</td>
+                <td>alcoholic_beverageuse_consumption</td>
+                <td>electrical</td>
+                <td>awning</td>
+                <td>plumbing</td>
+                <td>industrial_user_wastewater_discharge</td>
+                <td>overhead_banner</td>
+                <td>paving</td>
+                <td>fence_wall</td>
+                <td>pods_used_by_commercialparcel_service</td>
+                <td>tent</td>
+                <td>burglar_alarm_systems_permits_renewals</td>
+                <td>business_type</td>
+                <td>mechanical_heating_air_conditioning_refrigerationair_conditioning_harv</td>
+                <td>right_of_wayuse</td>
+                <td>bottle_club</td>
+                <td>uf_context_area_commercial_parking_decal</td>
+                <td>seasonal_sales</td>
+                <td>fuel_tank_installation</td>
+                <td>sales_and_use_tax_permits</td>
+                <td>fire_sprinkler</td>
+                <td>reconstruction_of_driveway_curb_gutter_and_sidewalk</td>
+                <td>driveway_commercial</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="service in vm.services">
+                <!--<td>
+                    <img ng-if="vm.showImage"
+                         ng-src="{{service.imageUrl}}"
+                         style="width:50px;margin:2px"
+                         title="{{service.productName}}">
+                </td>-->
+                <td>
+                    <a ng-href="#productDetail/{{service.business_category}}">
+                        {{ service.business_category}} </td>
+                    </a>
+                <td>{{ service.business_type }}</td>
+                <td>{{ service.building_commercial }}</td>
+                <td>{{ service.development_plan_review }}</td>
+                <td>{{ service.special_event }}</td>
+                <td>{{ service.sign }}</td>
+                <td>{{ service.wastewater_grease_sand_oil_and_lint_interceptor }}</td>
+                <td>{{ service.occupational_license_taxes }}</td>
+                <td>{{ service.fire_alarm_permit }}</td>
+                <td>{{ service.site_plan }}</td>
+                <td>{{ service.tree_removal_commercial }}</td>
+                <td>{{ service.fire_alarm_system }}</td>
+                <td>{{ service.water_ww_construction }}</td>
+                <td>{{ service.change_of_use }}</td>
+                <td>{{ service.promotional_event }}</td>
+                <td>{{ service.business_occupational_license }}</td>
+                <td>{{ service.zoning_verification_and_compliance }}</td>
+                <td>{{ service.alcoholic_beverageuse_consumption }}</td>
+                <td>{{ service.electrical }}</td>
+                <td>{{ service.awning }}</td>
+                <td>{{ service.plumbing }}</td>
+                <td>{{ service.industrial_user_wastewater_discharge }}</td>
+                <td>{{ service.overhead_banner }}</td>
+                <td>{{ service.paving }}</td>
+                <td>{{ service.fence_wall }}</td>
+                <td>{{ service.pods_used_by_commercialparcel_service }}</td>
+                <td>{{ service.tent }}</td>
+                <td>{{ service.burglar_alarm_systems_permits_renewals }}</td>
+                <td>{{ service.business_type }}</td>
+                <td>{{ service.mechanical_heating_air_conditioning_refrigerationair_conditioning_harv }}</td>
+                <td>{{ service.right_of_wayuse }}</td>
+                <td>{{ service.bottle_club }}</td>
+                <td>{{ service.uf_context_area_commercial_parking_decal }}</td>
+                <td>{{ service.seasonal_sales }}</td>
+                <td>{{ service.fuel_tank_installation }}</td>
+                <td>{{ service.sales_and_use_tax_permits }}</td>
+                <td>{{ service.fire_sprinkler }}</td>
+                <td>{{ service.reconstruction_of_driveway_curb_gutter_and_sidewalk }}</td>
+                <td>{{ service.driveway_commercial }}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
